@@ -1,1 +1,1 @@
-web: target/universal/stage/bin/TripAPI -Dhttp.port=${PORT} 
+web: target/universal/stage/bin/tripapi -Dhttp.port=${PORT} 
