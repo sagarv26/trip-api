@@ -5,23 +5,23 @@
 # Home page
 GET     /                           controllers.Application.index()
 
-GET     /district/all            	@controllers.GetValue.getAllDistricts()
-GET     /district/allOrder           @controllers.GetValue.getAllDistrictsOrder()
+#GET     /district/all            	@controllers.GetValue.getAllDistricts()
+#GET     /district/allOrder           @controllers.GetValue.getAllDistrictsOrder()
 
-GET     /place/all             		@controllers.GetValue.getAllPlaces()
-GET     /place/allOrder             @controllers.GetValue.getAllPlacesOrder()
+#GET     /place/all             		@controllers.GetValue.getAllPlaces()
+#GET     /place/allOrder             @controllers.GetValue.getAllPlacesOrder()
 
-GET     /placeValues/all            @controllers.GetValue.getAllPlaceValues()
+#GET     /placeValues/all            @controllers.GetValue.getAllPlaceValues()
 
-GET		/out						@controllers.GetValue.getOut()
+#GET		/out						@controllers.GetValue.getOut()
 
-GET		/place						@controllers.GetValue.getPlace()
+#GET		/place						@controllers.GetValue.getPlace()
 
-GET		/out2						@controllers.GetValue.getOut_two()
+#GET		/out2						@controllers.GetValue.getOut_two()
 
-GET		/out3    					@controllers.GetValue.getOut_three()
+#GET		/out3    					@controllers.GetValue.getOut_three()
 
-GET		/outbyid						@controllers.GetValue.getPlaceByID()
+#GET		/outbyid						@controllers.GetValue.getPlaceByID()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)
