@@ -16,7 +16,7 @@ public class PlaceValues extends Model {
     public Long id_place;
 	
 	@Column
-    public String best_session;
+    public String best_season;
 
     @Column
     public String near_by_place;

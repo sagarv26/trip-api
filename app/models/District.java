@@ -12,10 +12,6 @@ import play.db.ebean.Model;
 @Table(name = "district")
 public class District extends Model {
 
-   
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 
 	@Id

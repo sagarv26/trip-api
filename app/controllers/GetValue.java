@@ -160,6 +160,7 @@ public class GetValue extends Controller{
 					Map<String, Object> place_map=new HashMap<>();
 					if(district.id_dist==place.id_dist){
 						place_map.put("place_name", place.place_name);
+						place_map.put("place_id", place.id_place);
 					}
 					
 					List<PlaceValues> valueList = db.find(PlaceValues.class).where().eq("id_place", place.id_place).findList();

@@ -15,7 +15,7 @@ GET     /                           controllers.Application.index()
 
 #GET		/out						@controllers.GetValue.getOut()
 
-#GET		/place						@controllers.GetValue.getPlace()
+GET		/place						@controllers.GetValue.getPlace()
 
 #GET		/out2						@controllers.GetValue.getOut_two()
 
