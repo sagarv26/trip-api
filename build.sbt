@@ -1,26 +1,27 @@
-name := "TripAPI"
+name := "TravelAPI"
 
 version := "1.0-SNAPSHOT"
 
 libraryDependencies ++= Seq(
-  javaJdbc,
-  javaEbean,
   cache,
-  javaWs,
+  javaEbean,
   "mysql" % "mysql-connector-java" % "5.1.18",
   "com.fasterxml.jackson.jaxrs" % "jackson-jaxrs-json-provider" % "2.5.4",
   "org.projectlombok" % "lombok" % "1.16.4",
-  "com.google.inject" % "guice" % "4.0"
-)     
+  "com.google.inject" % "guice" % "4.0",
+  "redis.clients" % "jedis" % "2.9.0",
+  "org.apache.logging.log4j" % "log4j-api" % "2.7",
+  "org.apache.logging.log4j" % "log4j-core" % "2.7",
+  "org.elasticsearch" % "elasticsearch" % "5.6.3",
+  "org.elasticsearch.client" % "transport" % "5.6.3",
+  "commons-lang" % "commons-lang" % "2.3",
+  "commons-collections" % "commons-collections" % "3.2.1",
+  "commons-io" % "commons-io" % "2.4",
+  "commons-codec" % "commons-codec" % "1.6"
+)
 
-enablePlugins(JavaAppPackaging)
+ebeanEnabled := true  
 
-addSbtPlugin("com.typesafe.sbt" % "sbt-native-packager" % "1.0.0-M1")
+libraryDependencies += "io.netty" % "netty" % "3.6.3.Final" force()
 
-javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
-
-resolvers += Classpaths.typesafeResolver
-
-addSbtPlugin( "com.typesafe.startscript" % "xsbt-start-script-plugin" % "0.5.2" )
-
-fork in run := false
+play.Project.playJavaSettings
