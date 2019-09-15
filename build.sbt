@@ -17,4 +17,4 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
-play.Project.playJavaSettings
+fork in run := false
