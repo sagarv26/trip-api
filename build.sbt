@@ -13,7 +13,6 @@ libraryDependencies ++= Seq(
   "com.google.inject" % "guice" % "4.0"
 )     
 
-lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 javacOptions ++= Seq("-source", "1.8", "-target", "1.8")
 
