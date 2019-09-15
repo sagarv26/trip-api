@@ -5,7 +5,10 @@
 # Home page
 GET     /                           controllers.Application.index()
 
-#GET     /district/all            	@controllers.GetValue.getAllDistricts()
+#GET     /district            	     @controllers.DistrictController.getAllDistricts()
+GET     /district/allOrder           @controllers.DistrictController.getAllDistrictsOrder()
+
+GET     /district/all            	@controllers.GetValue.getAllDistricts()
 #GET     /district/allOrder           @controllers.GetValue.getAllDistrictsOrder()
 
 #GET     /place/all             		@controllers.GetValue.getAllPlaces()

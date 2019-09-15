@@ -17,6 +17,7 @@ import models.Places;
 import play.libs.Json;
 import play.mvc.Controller;
 import play.mvc.Result;
+import services.DistrictService;
 
 public class GetValue extends Controller{
 	private final EbeanServer db;
@@ -26,7 +27,22 @@ public class GetValue extends Controller{
 	    {
 	        db = Ebean.getServer("default");
 	    }
-
+//
+//	 	private final DistrictService districtService;
+//	 	
+//	 	@Inject
+//		public GetValue(DistrictService districtService) {
+//			db = Ebean.getServer("default");
+//			this.districtService = districtService;
+//		}
+//		
+//		public Result getAllDistricts() {
+//			System.out.println("Calling Controller");
+//	        Map<String, Object> hashMap = new HashMap<>();
+//	        List<District> district = districtService.getAllDistrict();
+//	        hashMap.put("District",district);
+//	        return ok(Json.toJson(hashMap));
+//	    }
 	 	public Result getAllDistricts() {
 	        Map<String, Object> hashMap = new HashMap<>();
 	        List<District> distList = db.find(District.class).findList();
