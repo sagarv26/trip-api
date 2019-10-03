@@ -1,4 +1,4 @@
-name := "TravelAPI"
+name := "tripapi"
 
 version := "1.0-SNAPSHOT"
 
