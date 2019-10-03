@@ -19,6 +19,7 @@ GET     /district/all            	@controllers.GetValue.getAllDistricts()
 #GET		/out						@controllers.GetValue.getOut()
 
 GET		/place						@controllers.GetValue.getPlace()
+GET		/place						@tripapi.controllers.GetValue.getPlace()
 
 #GET		/out2						@controllers.GetValue.getOut_two()
 
