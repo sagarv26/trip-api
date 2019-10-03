@@ -5,7 +5,6 @@ version := "1.0-SNAPSHOT"
 libraryDependencies ++= Seq(
   cache,
   javaEbean,
-  javaWs,
   "mysql" % "mysql-connector-java" % "5.1.18",
   "com.fasterxml.jackson.jaxrs" % "jackson-jaxrs-json-provider" % "2.5.4",
   "org.projectlombok" % "lombok" % "1.16.4",
