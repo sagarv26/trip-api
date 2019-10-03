@@ -5,21 +5,17 @@
 # Home page
 GET     /                           controllers.Application.index()
 
-#GET     /district            	     @controllers.DistrictController.getAllDistricts()
-#GET     /district/allOrder           @controllers.DistrictController.getAllDistrictsOrder()
-
 GET     /district/all            	@controllers.GetValue.getAllDistricts()
-#GET     /district/allOrder           @controllers.GetValue.getAllDistrictsOrder()
+GET     /district/allOrder           @controllers.GetValue.getAllDistrictsOrder()
 
-#GET     /place/all             		@controllers.GetValue.getAllPlaces()
-#GET     /place/allOrder             @controllers.GetValue.getAllPlacesOrder()
+GET     /place/all             		@controllers.GetValue.getAllPlaces()
+GET     /place/allOrder             @controllers.GetValue.getAllPlacesOrder()
 
-#GET     /placeValues/all            @controllers.GetValue.getAllPlaceValues()
+GET     /placeValues/all            @controllers.GetValue.getAllPlaceValues()
 
-#GET		/out						@controllers.GetValue.getOut()
+GET		/out						@controllers.GetValue.getOut()
 
 GET		/place						@controllers.GetValue.getPlace()
-GET		/place						@tripapi.controllers.GetValue.getPlace()
 
 #GET		/out2						@controllers.GetValue.getOut_two()
 
